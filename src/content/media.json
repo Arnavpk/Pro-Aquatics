@@ -1,0 +1,145 @@
+{
+  "_note": "Temporary Unsplash stock photography. Replace `id` with a local path (e.g. \"/images/club/pool-01.jpg\") when the client supplies real photographs, or run `npm run images:localize` to self-host these.",
+  "images": {
+    "badmintonJump": {
+      "id": "photo-1626224583764-f87db24ac4ea",
+      "alt": "Badminton player leaping to smash a shuttlecock on an indoor court",
+      "credit": "Muktasim Azlan / Unsplash"
+    },
+    "badmintonJumpAlt": {
+      "id": "photo-1722087642932-9b070e9a066e",
+      "alt": "Player jumping high to strike the shuttle on an indoor badminton court",
+      "credit": "Irish83 / Unsplash"
+    },
+    "badmintonMatch": {
+      "id": "photo-1784881650480-f6e4ee94364b",
+      "alt": "Badminton player in mid-air reaching for the shuttle during a match",
+      "credit": "Unsplash"
+    },
+    "badmintonDoubles": {
+      "id": "photo-1783266503722-973f579d9b5a",
+      "alt": "Four players in a doubles rally on a blue indoor badminton court",
+      "credit": "Evan Marvell / Unsplash"
+    },
+    "badmintonJuniors": {
+      "id": "photo-1782892937143-2dc93cb5cd63",
+      "alt": "Two young players practising badminton on a green indoor court",
+      "credit": "Irish83 / Unsplash"
+    },
+    "badmintonPlayer": {
+      "id": "photo-1599391398131-cd12dfc6c24e",
+      "alt": "Badminton player standing ready on a green court",
+      "credit": "Muktasim Azlan / Unsplash"
+    },
+    "badmintonNight": {
+      "id": "photo-1761286753703-570ed91dd90e",
+      "alt": "Player striking the shuttle on a floodlit badminton court",
+      "credit": "Abror Alarice / Unsplash"
+    },
+    "badmintonCourtBlue": {
+      "id": "photo-1775993167284-8e6a6e56ab69",
+      "alt": "Indoor badminton court with blue flooring and white court lines",
+      "credit": "Palak Pitroda / Unsplash"
+    },
+    "badmintonCourtsEmpty": {
+      "id": "photo-1775993167393-f2add1f8eec2",
+      "alt": "Row of empty indoor badminton courts ready for play",
+      "credit": "Palak Pitroda / Unsplash"
+    },
+    "shuttleOnNet": {
+      "id": "photo-1626721105368-a69248e93b32",
+      "alt": "White feather shuttlecock resting on top of a badminton net",
+      "credit": "Stephan Rothe / Unsplash"
+    },
+    "racketAndShuttles": {
+      "id": "photo-1708312604109-16c0be9326cd",
+      "alt": "Badminton racket and two shuttlecocks on a green court surface",
+      "credit": "Allison Saeng / Unsplash"
+    },
+    "racketFlatlay": {
+      "id": "photo-1775720724581-6e6ba7eb395f",
+      "alt": "Badminton racket and shuttlecocks arranged on a green surface",
+      "credit": "Unsplash"
+    },
+    "shuttleInHand": {
+      "id": "photo-1570656451832-0112c7a4ab3f",
+      "alt": "Player holding a white shuttlecock before serving",
+      "credit": "Stephan Rothe / Unsplash"
+    },
+    "courtShoe": {
+      "id": "photo-1617696618050-b0fef0c666af",
+      "alt": "Court shoe and shuttlecock on a green badminton court line",
+      "credit": "Saif71.com / Unsplash"
+    },
+    "swimButterfly": {
+      "id": "photo-1530549387789-4c1017266635",
+      "alt": "Swimmer powering through the water in butterfly stroke",
+      "credit": "Gentrit Sylejmani / Unsplash"
+    },
+    "swimOlympicPool": {
+      "id": "photo-1519315901367-f34ff9154487",
+      "alt": "Swimmer training in a lane of a competition swimming pool",
+      "credit": "Marcus Ng / Unsplash"
+    },
+    "swimCompetition": {
+      "id": "photo-1560088937-d46f082d558b",
+      "alt": "Swimmer racing freestyle in a competition pool",
+      "credit": "Serena Repice Lentini / Unsplash"
+    },
+    "swimLanes": {
+      "id": "photo-1560088939-ddaf4d3e0d0b",
+      "alt": "Three swimmers training side by side in pool lanes",
+      "credit": "Serena Repice Lentini / Unsplash"
+    },
+    "swimSpray": {
+      "id": "photo-1623720784901-2e066dfaa9ea",
+      "alt": "Swimmer's arm cutting through turquoise water with spray",
+      "credit": "Adam Cai / Unsplash"
+    },
+    "swimFreestyle": {
+      "id": "photo-1629035019466-0d46b13c2bcf",
+      "alt": "Swimmer mid-stroke in a blue lane",
+      "credit": "Adam Cai / Unsplash"
+    },
+    "swimDive": {
+      "id": "photo-1530631673369-bc20fdb32288",
+      "alt": "Swimmer diving into the pool with a splash of water",
+      "credit": "Lavi Perchik / Unsplash"
+    },
+    "swimGoggles": {
+      "id": "photo-1600965962102-9d260a71890d",
+      "alt": "Swimmer wearing goggles in the pool",
+      "credit": "Brian Matangelo / Unsplash"
+    },
+    "swimRacers": {
+      "id": "photo-1528912599607-dc5f96f6c1d8",
+      "alt": "Competitive swimmers racing in adjacent lanes",
+      "credit": "Arisa Chattasa / Unsplash"
+    },
+    "poolBlue": {
+      "id": "photo-1557459325-b6733cbeae9c",
+      "alt": "Clear blue swimming pool water",
+      "credit": "Thom Milkovic / Unsplash"
+    },
+    "poolWater": {
+      "id": "photo-1558617320-e695f0d420de",
+      "alt": "Close-up of rippling turquoise pool water",
+      "credit": "Thomas Park / Unsplash"
+    },
+    "poolLadder": {
+      "id": "photo-1504309092620-4d0ec726efa4",
+      "alt": "Stainless steel ladder descending into a swimming pool",
+      "credit": "Etienne Girardet / Unsplash"
+    },
+    "poolTiles": {
+      "id": "photo-1687160954681-230591e7b494",
+      "alt": "Blue tiled swimming pool seen through clear water",
+      "credit": "Tim Mossholder / Unsplash"
+    },
+    "poolEdge": {
+      "id": "photo-1572331165267-854da2b10ccc",
+      "alt": "Calm swimming pool surface in bright light",
+      "credit": "Roberto Nickson / Unsplash"
+    }
+  }
+}

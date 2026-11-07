@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   PRO AQUATICS — design tokens (brand book)
+   ------------------------------------------------------------------ */
+@theme {
+  /* Official brand colours */
+  --color-navy: #082b4c;
+  --color-gold: #f4e7a1;
+  --color-aqua: #2d789b;
+  --color-ice: #a9d5e5;
+  --color-soft: #f7f8fa;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Fluid campaign-style type scale */
+  --text-mega: clamp(3.25rem, 10.5vw, 10.5rem);
+  --text-mega--line-height: 0.88;
+  --text-mega--letter-spacing: -0.035em;
+  --text-display: clamp(2.5rem, 6.4vw, 6.25rem);
+  --text-display--line-height: 0.92;
+  --text-display--letter-spacing: -0.03em;
+  --text-headline: clamp(2rem, 4.2vw, 4rem);
+  --text-headline--line-height: 0.98;
+  --text-headline--letter-spacing: -0.025em;
+  --text-title: clamp(1.375rem, 2.1vw, 2rem);
+  --text-title--line-height: 1.1;
+  --text-lead: clamp(1.0625rem, 1.25vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1;
+  --text-eyebrow--letter-spacing: 0.22em;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  /* Layout */
+  --spacing-gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --spacing-section: clamp(5rem, 11vw, 10rem);
+  --container-site: 88rem;
+}
+
+/* ------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------ */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-white font-sans text-navy;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    font-weight: 800;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    @apply bg-gold text-navy;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
+  .on-light :focus-visible,
+  .on-light:focus-visible {
+    outline-color: var(--color-aqua);
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* ------------------------------------------------------------------
+   Reusable patterns
+   ------------------------------------------------------------------ */
+@utility container-site {
+  width: 100%;
+  max-width: var(--container-site);
+  margin-inline: auto;
+  padding-inline: var(--spacing-gutter);
+}
+
+@utility section-y {
+  padding-block: var(--spacing-section);
+}
+
+@utility eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-eyebrow);
+  letter-spacing: var(--text-eyebrow--letter-spacing);
+  text-transform: uppercase;
+}
+
+/* Court-line grid texture (badminton) */
+@utility bg-court-lines {
+  background-image:
+    linear-gradient(to right, rgb(244 231 161 / 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(244 231 161 / 0.09) 1px, transparent 1px);
+  background-size: 120px 120px;
+}
+
+/* Lane-line texture (swimming) */
+@utility bg-lanes {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 79px,
+    rgb(45 120 155 / 0.16) 79px 80px
+  );
+}
+
+/* Masks used by GSAP reveals */
+@utility line-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+  margin-bottom: -0.06em;
+}
+
+/* Hide scrollbar on horizontal strips while keeping them scrollable */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Editable placeholder values (see src/lib/placeholder.ts) */
+.tbc {
+  border-bottom: 1px dashed currentColor;
+  opacity: 0.75;
+  font-style: normal;
+  cursor: help;
+}
+
+/* Above-the-fold intro elements stay hidden until GSAP reveals them
+   (prevents a flash before hydration). Fallback reveals them after 2.5s. */
+@keyframes intro-fallback {
+  to {
+    visibility: visible;
+  }
+}
+.js [data-intro] {
+  visibility: hidden;
+  animation: intro-fallback 0s 2.5s forwards;
+}
+
+/* Scroll cue — the only looping animation; disabled for reduced motion */
+@keyframes cue {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(220%);
+  }
+}
+.animate-cue {
+  animation: cue 2.2s var(--ease-in-out-quart) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

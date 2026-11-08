@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { AboutIntro } from "@/features/home/AboutIntro";
 import { HomeHero } from "@/features/home/HomeHero";
-import { FinalCta, GalleryPreview, StatsSection } from "@/features/home/HomeSections";
+import { FinalCta, GalleryPreview } from "@/features/home/HomeSections";
 import { SportsSelection } from "@/features/home/SportsSelection";
 import { WhyChooseUs } from "@/features/home/WhyChooseUs";
 import { media } from "@/content/media";
@@ -25,7 +25,6 @@ export default function HomePage() {
       <SportsSelection />
       <AboutIntro />
       <WhyChooseUs />
-      <StatsSection />
       <GalleryPreview />
       <FinalCta />
     </>

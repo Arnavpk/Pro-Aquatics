@@ -65,7 +65,9 @@ export function Navbar() {
               solid ? "h-[4.5rem]" : "h-20 lg:h-24",
             )}
           >
-            <Logo tone="onDark" />
+            <div className="shrink-0">
+              <Logo tone="onDark" />
+            </div>
 
             <ul className="hidden items-center gap-1 lg:flex">
               {mainNav.map((item) => {

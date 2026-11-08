@@ -100,7 +100,7 @@ export function HomeHero() {
   };
 
   return (
-    <section ref={root} className="relative h-svh min-h-[40rem] overflow-hidden bg-navy text-white">
+    <section ref={root} className="relative min-h-[max(100svh,40rem)] overflow-hidden bg-navy text-white">
       {/* Photography panels */}
       <div className="absolute inset-0 flex flex-col lg:flex-row">
         {panel("badminton")}
@@ -115,8 +115,11 @@ export function HomeHero() {
       <span aria-hidden className="pointer-events-none absolute inset-0 bg-linear-to-r from-navy/70 via-navy/20 to-transparent" />
 
       {/* Copy */}
-      <div data-copy className="pointer-events-none relative z-10 flex h-full items-center">
-        <div className="container-site flex flex-col gap-7 pt-16">
+      <div
+        data-copy
+        className="pointer-events-none relative z-10 flex min-h-[max(100svh,40rem)] items-center py-28 lg:py-32"
+      >
+        <div className="container-site flex flex-col gap-7">
           <p data-intro data-fade className="eyebrow flex items-center gap-3 text-gold">
             <span className="h-px w-10 bg-gold" />
             Badminton &amp; Swimming · Keshavnagar, Pune

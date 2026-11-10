@@ -42,7 +42,7 @@ export function SwimmingAbout() {
   );
 }
 
-/** Each specification is a "lane": rope dividers, lane number, and a stroke that swims across on hover. */
+/** Each specification is a "lane": rope dividers, lane number, and a rolling wave of water that sweeps across on hover. */
 export function PoolFacilities() {
   return (
     <section id="facilities" className="section-y relative scroll-mt-20 overflow-hidden bg-soft">
@@ -70,10 +70,14 @@ export function PoolFacilities() {
                 className="block h-[3px] w-full bg-[repeating-linear-gradient(90deg,var(--color-aqua)_0_10px,var(--color-white)_10px_20px,var(--color-ice)_20px_30px)] opacity-70"
               />
               <div className="relative grid grid-cols-[3.5rem_1fr] items-center gap-x-6 gap-y-2 overflow-hidden py-8 sm:grid-cols-[4.5rem_1fr_auto] sm:py-10">
+                {/* water sweep: a wave-edged fill that flows across the lane on hover */}
                 <span
                   aria-hidden
-                  className="absolute inset-y-0 left-0 w-full origin-left scale-x-0 bg-ice/30 transition-transform duration-[1.1s] ease-out-expo group-hover:scale-x-100"
-                />
+                  className="pointer-events-none absolute inset-y-0 left-0 w-[calc(100%+3rem)] -translate-x-full opacity-30 transition-transform duration-[1.3s] ease-out-expo group-hover:translate-x-0"
+                >
+                  <span className="absolute inset-y-0 left-0 right-[calc(3rem-1px)] bg-ice" />
+                  <span className="water-edge absolute inset-y-0 right-0 w-12" />
+                </span>
                 <span className="relative font-display text-[2.75rem] font-extrabold leading-none text-aqua/25 transition-colors duration-500 group-hover:text-aqua">
                   {i + 1}
                 </span>

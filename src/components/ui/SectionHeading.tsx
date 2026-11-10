@@ -16,6 +16,8 @@ export function SectionHeading({
   as: Tag = "h2",
   className,
   accentLast = false,
+  accentClassName,
+  eyebrowLine = true,
 }: {
   eyebrow?: string;
   lines: string[];
@@ -27,6 +29,10 @@ export function SectionHeading({
   className?: string;
   /** Colour the final line with the accent colour. */
   accentLast?: boolean;
+  /** Override the accent colour (e.g. "text-gold"). */
+  accentClassName?: string;
+  /** Show the small line before the eyebrow text. */
+  eyebrowLine?: boolean;
 }) {
   const light = tone === "light";
   return (
@@ -44,7 +50,7 @@ export function SectionHeading({
             light ? "text-gold" : "text-aqua",
           )}
         >
-          <span aria-hidden className="h-px w-8 bg-current" />
+          {eyebrowLine && <span aria-hidden className="h-px w-8 bg-current" />}
           {eyebrow}
         </p>
       )}
@@ -57,7 +63,7 @@ export function SectionHeading({
           light ? "text-white" : "text-navy",
         )}
         accentLine={accentLast ? lines.length - 1 : undefined}
-        accentClassName={light ? "text-gold" : "text-aqua"}
+        accentClassName={accentClassName ?? (light ? "text-gold" : "text-aqua")}
       />
       {intro && (
         <div

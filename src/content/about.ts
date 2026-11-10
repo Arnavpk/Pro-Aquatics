@@ -8,15 +8,15 @@ import type { GalleryItem } from "@/types/content";
  */
 export const aboutHero = {
   eyebrow: "About Us",
-  heading: ["BUILT FOR", "MOVEMENT."],
-  text: "Pro Aquatics is a sporting destination in Keshavnagar, Pune, bringing badminton and swimming together under one roof — with one standard for both.",
+  heading: ["YOUR GAME", "YOUR GROWTH."],
+  text: "Pro Aquatics is a sporting destination in Keshavnagar, Pune, bringing badminton and swimming together under one roof with one standard for both.",
   images: [media.badmintonJumpAlt, media.swimDive, media.shuttleOnNet],
 };
 
 export const aboutIntroduction = {
   heading: "ONE CLUB. TWO DISCIPLINES. ONE STANDARD.",
   body: [
-    "We created Pro Aquatics for people who take their sport seriously — and for people who are just getting started. On the court and in the pool, the expectation is the same: show up, work with purpose and leave a little better than you arrived.",
+    "We created Pro Aquatics for people who take their sport seriously and for people who are just getting started. On the court and in the pool, the expectation is the same: show up, work with purpose and leave a little better than you arrived.",
     "Badminton sharpens speed, reflexes and decision-making. Swimming builds endurance, strength and calm. Together they make a complete sporting life, and our club is designed so you can pursue either, or both, with the same quality of facilities, coaching and care.",
   ],
 };
@@ -24,13 +24,13 @@ export const aboutIntroduction = {
 export const philosophy = {
   eyebrow: "Brand philosophy",
   quote: "Your game. Your growth.",
-  text: "Every player arrives with a different goal — fitness, confidence, competition or simply joy. Our role is to give that goal structure: the right space, the right guidance and a community that holds you to a higher standard.",
+  text: "Every player arrives with a different goal fitness, confidence, competition or simply joy. Our role is to give that goal structure: the right space, the right guidance and a community that holds you to a higher standard.",
 };
 
 export const visionMission = {
   vision: {
     title: "Vision",
-    text: "To set a new standard for community sport in Pune — a club where every member has the facilities, coaching and encouragement to keep moving and keep improving.",
+    text: "To set a new standard for community sport in Pune a club where every member has the facilities, coaching and encouragement to keep moving and keep improving.",
   },
   mission: {
     title: "Mission",
@@ -39,7 +39,7 @@ export const visionMission = {
 };
 
 export const approach = [
-  { icon: Compass, title: "Start where you are", text: "Every program begins with your current level — no assumptions, no pressure." },
+  { icon: Compass, title: "Start where you are", text: "Every program begins with your current level no assumptions, no pressure." },
   { icon: Target, title: "Train with intent", text: "Sessions have a clear focus, so practice becomes progress." },
   { icon: Repeat, title: "Build the habit", text: "Consistent routines that fit around school, work and family life." },
   { icon: HeartHandshake, title: "Grow together", text: "Juniors, adults and families share one club and one culture." },

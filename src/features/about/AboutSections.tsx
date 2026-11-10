@@ -30,7 +30,6 @@ export function AboutHero() {
       <div className="container-site grid gap-16 lg:grid-cols-12 lg:items-center">
         <div className="flex flex-col gap-8 lg:col-span-6">
           <p className="eyebrow flex items-center gap-3 text-gold">
-            <span className="h-px w-10 bg-gold" />
             {aboutHero.eyebrow}
           </p>
           <TextReveal

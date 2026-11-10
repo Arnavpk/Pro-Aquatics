@@ -12,7 +12,6 @@ import type { MediaImage, Sport } from "@/types/content";
  */
 export function SportsCard({
   sport,
-  index,
   heading,
   text,
   cta,
@@ -21,7 +20,7 @@ export function SportsCard({
   className,
 }: {
   sport: Sport;
-  index: string;
+  index?: string;
   heading: string;
   text: string;
   cta: string;
@@ -67,12 +66,7 @@ export function SportsCard({
         </>
       )}
 
-      <div className="flex items-start justify-between">
-        <span className="eyebrow flex items-center gap-3 text-white/80">
-          <span className={cn("font-display text-sm", swim ? "text-ice" : "text-gold")}>{index}</span>
-          <span className="h-px w-8 bg-white/40" />
-          {swim ? "Swimming" : "Badminton"}
-        </span>
+      <div className="flex items-start justify-end">
         <span
           aria-hidden
           className={cn(

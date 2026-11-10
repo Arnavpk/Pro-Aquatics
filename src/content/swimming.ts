@@ -14,7 +14,7 @@ export const swimmingHero = {
 export const swimmingAbout = {
   eyebrow: "The swimming experience",
   statement:
-    "Swimming is the one sport that works every part of you — strength, breath, rhythm and calm. At Pro Aquatics, the pool is a place to learn it properly, train it seriously and enjoy it every time you get in.",
+    "Swimming is the one sport that works every part of you: strength, breath, rhythm and calm. At Pro Aquatics, the pool is a place to learn it properly, train it seriously and enjoy it every time you get in.",
   points: [
     { title: "Learn", text: "Structured lessons that build water confidence and correct technique from day one." },
     { title: "Train", text: "Lap swimming and stroke development for fitness, endurance and performance." },
@@ -44,7 +44,7 @@ export const swimmingPrograms: Program[] = [
     slug: "beginner",
     level: "01",
     title: "Beginner Swimming",
-    summary: "Water confidence, floating, breathing and the first strokes — taught patiently, step by step.",
+    summary: "Water confidence, floating, breathing and the first strokes; taught patiently, step by step.",
     focus: ["Water confidence", "Breathing & floating", "Kicking technique", "Freestyle basics"],
     image: media.swimGoggles,
     details: details(),
@@ -62,7 +62,7 @@ export const swimmingPrograms: Program[] = [
     slug: "advanced",
     level: "03",
     title: "Advanced Swimming",
-    summary: "Performance-focused training: race pace, efficient turns and starts, and structured sets.",
+    summary: "Performance focused training: race pace, efficient turns and starts, and structured sets.",
     focus: ["All four strokes", "Starts & tumble turns", "Interval training", "Race preparation"],
     image: media.swimRacers,
     details: details(),

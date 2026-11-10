@@ -24,18 +24,18 @@ export const sportsSelection = {
   cards: [
     {
       sport: "badminton" as const,
-      index: "01",
+      // index: "01",
       heading: "OWN THE COURT.",
-      text: "Indoor courts built for fast rallies and focused practice — with structured coaching for every level, from first serve to competitive play.",
+      text: "Indoor courts built for fast rallies and focused practice  with structured coaching for every level, from first serve to competitive play.",
       cta: "Explore Badminton",
       href: "/badminton",
       image: media.badmintonDoubles,
     },
     {
       sport: "swimming" as const,
-      index: "02",
+      // index: "02",
       heading: "MAKE WAVES.",
-      text: "A pool designed for confident, consistent swimming — from learn-to-swim programs to lap training and personal coaching.",
+      text: "A pool designed for confident, consistent swimming from learn-to-swim programs to lap training and personal coaching.",
       cta: "Explore Swimming",
       href: "/swimming",
       image: media.swimCompetition,
@@ -52,7 +52,7 @@ export const aboutIntro = {
     { title: "Skill development", text: "Clear progression for every level, from fundamentals to refined technique." },
     { title: "Training opportunities", text: "Coaching, group sessions and programs designed around real goals." },
     { title: "Community", text: "A welcoming club where families, juniors and adults train side by side." },
-    { title: "Active lifestyles", text: "Routines that fit around school, work and life — and stay with you." },
+    { title: "Active lifestyles", text: "Routines that fit around school, work and life and stay with you." },
   ],
   images: { primary: media.swimLanes, secondary: media.shuttleInHand },
 };
@@ -74,7 +74,7 @@ export const whyChooseUs: { heading: string; eyebrow: string; items: Feature[] }
     {
       icon: HeartHandshake,
       title: "Welcoming Community",
-      description: "An inclusive club for juniors, adults and families — wherever you are starting from.",
+      description: "An inclusive club for juniors, adults and families wherever you are starting from.",
     },
     {
       icon: TrendingUp,

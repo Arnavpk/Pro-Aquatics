@@ -8,9 +8,16 @@ export function SportsSelection() {
     <section className="section-y relative bg-white" aria-labelledby="find-your-game">
       <div className="container-site flex flex-col gap-14">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-          <SectionHeading eyebrow={sportsSelection.eyebrow} lines={[sportsSelection.heading]} size="display" />
+          <SectionHeading
+            eyebrow={sportsSelection.eyebrow}
+            eyebrowLine={false}
+            lines={["FIND YOUR", "GAME."]}
+            size="display"
+            accentLast
+            accentClassName="text-gold"
+          />
           <p className="max-w-sm text-navy/65 lg:pb-3 lg:text-right">
-            Choose your discipline — or make room for both. Every program is built on the same standard of
+            Choose your discipline or make room for both. Every program is built on the same standard of
             facilities and coaching.
           </p>
         </div>

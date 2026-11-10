@@ -124,12 +124,12 @@ export const membershipFaq: FaqItem[] = [
   {
     question: "What membership options are available?",
     answer:
-      "We offer Badminton memberships, Swimming memberships and Combined Sports memberships that cover both. Each category has options to suit different levels of commitment — current plans, durations and prices are listed above and confirmed by our team on enquiry.",
+      "We offer Badminton memberships, Swimming memberships and Combined Sports memberships that cover both. Each category has options to suit different levels of commitment: current plans, durations and prices are listed above and confirmed by our team on enquiry.",
   },
   {
     question: "How does booking work?",
     answer:
-      "Use the booking page to send a request with your sport, session type, preferred date and time. A booking request is not a confirmed slot — our team checks availability and contacts you to confirm.",
+      "Use the booking page to send a request with your sport, session type, preferred date and time. A booking request is not a confirmed slot our team checks availability and contacts you to confirm.",
   },
   {
     question: "Can members participate in both sports?",

@@ -37,7 +37,6 @@ export function HomeHero() {
             0.08,
           )
           .fromTo(q("[data-panel-media]"), { scale: 1.35 }, { scale: 1, duration: 2.4 }, 0.2)
-          .fromTo(q("[data-divider]"), { scaleY: 0 }, { scaleY: 1, duration: 1.4, ease: "expo.inOut" }, 0.6)
           .fromTo(q("[data-line]"), { yPercent: 115 }, { yPercent: 0, duration: 1.3, stagger: 0.1 }, 0.75)
           .fromTo(
             q("[data-fade]"),
@@ -85,16 +84,6 @@ export function HomeHero() {
         ) : (
           <span className="absolute inset-0 bg-navy/60 transition-colors duration-700 group-hover/panel:bg-navy/40" />
         )}
-        <span
-          className={cn(
-            "absolute bottom-6 hidden items-center gap-3 text-white sm:flex lg:bottom-10",
-            swim ? "right-6 lg:right-10" : "left-6 lg:left-10",
-          )}
-        >
-          <span className={cn("eyebrow", swim ? "text-ice" : "text-gold")}>{swim ? "02" : "01"}</span>
-          <span className="h-px w-8 bg-white/50 transition-all duration-700 group-hover/panel:w-14" />
-          <span className="eyebrow">{p.label}</span>
-        </span>
       </Link>
     );
   };
@@ -106,11 +95,6 @@ export function HomeHero() {
         {panel("badminton")}
         {panel("swimming")}
       </div>
-      <span
-        data-divider
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-1/2 h-px origin-left bg-gold/70 lg:inset-x-auto lg:inset-y-0 lg:left-1/2 lg:top-0 lg:h-auto lg:w-px lg:origin-top"
-      />
       {/* Readability gradient */}
       <span aria-hidden className="pointer-events-none absolute inset-0 bg-linear-to-r from-navy/70 via-navy/20 to-transparent" />
 
@@ -120,11 +104,18 @@ export function HomeHero() {
         className="pointer-events-none relative z-10 flex min-h-[max(100svh,40rem)] items-center py-28 lg:py-32"
       >
         <div className="container-site flex flex-col gap-7">
-          <p data-intro data-fade className="eyebrow flex items-center gap-3 text-gold">
-            <span className="h-px w-10 bg-gold" />
+          <p
+            data-intro
+            data-fade
+            className="font-display text-base font-extrabold uppercase leading-tight tracking-[0.18em] text-gold sm:text-xl lg:text-2xl"
+          >
             Badminton &amp; Swimming · Keshavnagar, Pune
           </p>
-          <h1 data-intro className="text-mega uppercase" aria-label={homeHero.heading.join(" ")}>
+          <h1
+            data-intro
+            className="text-[clamp(2.75rem,8.4vw,8.4rem)] font-extrabold uppercase leading-[0.88] tracking-[-0.035em]"
+            aria-label={homeHero.heading.join(" ")}
+          >
             {homeHero.heading.map((line, i) => (
               <span key={line} className="line-mask" aria-hidden>
                 <span data-line className={cn("block", i === homeHero.heading.length - 1 && "text-gold")}>
@@ -145,19 +136,6 @@ export function HomeHero() {
             </ButtonLink>
           </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div
-        data-intro
-        data-fade
-        aria-hidden
-        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 lg:flex"
-      >
-        <span className="eyebrow text-[0.6rem] text-white/60">Scroll</span>
-        <span className="relative h-14 w-px overflow-hidden bg-white/20">
-          <span className="animate-cue absolute inset-x-0 top-0 h-1/2 bg-gold" />
-        </span>
       </div>
     </section>
   );

@@ -59,14 +59,12 @@ export function SwimmingHero() {
 
       <div data-copy className="container-site flex flex-col items-center gap-8 pb-28 pt-36 text-center">
         <p data-intro data-fade className="eyebrow flex items-center gap-3 text-ice">
-          <span className="h-px w-10 bg-ice" />
           {swimmingHero.eyebrow}
-          <span className="h-px w-10 bg-ice" />
         </p>
         <h1 data-intro className="text-mega uppercase" aria-label={heading.join(" ")}>
           {heading.map((line, i) => (
             <span key={line} className="line-mask" aria-hidden>
-              <span data-line className={cn("block", i === 2 && "text-ice")}>
+              <span data-line className={cn("block", i === 2 && "text-gold")}>
                 {line}
               </span>
             </span>
